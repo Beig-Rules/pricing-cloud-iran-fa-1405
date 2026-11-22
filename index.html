@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مقایسه هاست ابری ایرانی</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#fff; --fg:#000; --muted:#666; --border:#e0e0e0; }
+    @media (prefers-color-scheme:dark){ :root{--bg:#000;--fg:#fff;--muted:#aaa;--border:#333;} }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'Vazirmatn',system-ui,sans-serif;background:var(--bg);color:var(--fg);line-height:1.7;}
+    .container{max-width:1100px;margin:0 auto;padding:0 24px;}
+    header{padding:24px 0;border-bottom:1px solid var(--border);text-align:center;}
+    .hero{padding:80px 0;text-align:center;}
+    .hero h1{font-size:2.75rem;margin-bottom:16px;}
+    .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;padding:40px 0;}
+    .plan{border:1px solid var(--border);padding:32px;text-align:center;}
+    .plan.featured{border-width:2px;border-color:var(--fg);}
+    .price{font-size:2.5rem;font-weight:700;margin:16px 0;}
+    .btn{display:inline-block;margin-top:24px;padding:12px 24px;background:var(--fg);color:var(--bg);text-decoration:none;}
+    footer{padding:40px 0;text-align:center;color:var(--muted);}
+  </style>
+</head>
+<body>
+  <header><h2>مقایسه سرویس‌های ابری</h2></header>
+  <section class="hero">
+    <div class="container">
+      <h1>بهترین هاست ابری برای کسب‌وکارهای ایرانی</h1>
+      <p>مقایسه شفاف قیمت‌ها به تومان. سرور محلی، پشتیبانی فارسی.</p>
+    </div>
+  </section>
+  <div class="container plans">
+    <div class="plan">
+      <h3>پایه</h3>
+      <div class="price">۱۲۰,۰۰۰ <small>تومان/ماه</small></div>
+      <p>۱ سرور · ۲۰ گیگ حافظه · پشتیبانی ایمیل</p>
+      <a href="#" class="btn">انتخاب</a>
+    </div>
+    <div class="plan featured">
+      <h3>حرفه‌ای</h3>
+      <div class="price">۳۵۰,۰۰۰ <small>تومان/ماه</small></div>
+      <p>۳ سرور · ۸۰ گیگ · پشتیبانی ۲۴/۷ · CDN</p>
+      <a href="#" class="btn">انتخاب</a>
+    </div>
+    <div class="plan">
+      <h3>سازمانی</h3>
+      <div class="price">۷۸۰,۰۰۰ <small>تومان/ماه</small></div>
+      <p>سرور نامحدود · پشتیبانی تلفنی · SLA ۹۹.۹%</p>
+      <a href="#" class="btn">انتخاب</a>
+    </div>
+  </div>
+  <footer><p>© ۱۴۰۵. قیمت‌ها نمونه هستند. ساخته شده با One-Page Studio.</p></footer>
+</body>
+</html>
